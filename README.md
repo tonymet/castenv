@@ -1,7 +1,6 @@
 # castenv
 
-![Build Status](https://img.shields.io/travis//castenv.svg)
-![Coverage](https://img.shields.io/coveralls//castenv.svg)
+![Build Status](https://img.shields.io/travis/tonymet/castenv.svg)
 ![Downloads](https://img.shields.io/npm/dm/castenv.svg)
 ![Downloads](https://img.shields.io/npm/dt/castenv.svg)
 ![npm version](https://img.shields.io/npm/v/castenv.svg)

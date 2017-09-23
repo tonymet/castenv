@@ -1,7 +1,14 @@
 sudo: false
 language: node_js
 node_js:
-  - stable
-  - 4
+- stable
+- 4
 after_script:
-  - npm run coveralls
+- npm run coveralls
+deploy:
+  email: tonym@tonym.us
+  provider: npm
+  on:
+    tags: true
+  api_key:
+    secure: mhWOdjivkqdIGxbdbUf3U6eMsr2CiFFjw2FFEmW0inNjOWCo5EUGsQUbYFbHUuHqk27rUnkHbMIZFbrLtwei751vVJfobKcUeOWEI2OklVIDetZ9DYeub4ACr80tJnTk7e+s6VQTjwyuC+Q2o2M2wTmpwMPyhbuKfpJQg49VOIfXO8MnnfeP8XNbP/034Cr9uD8B532/JbIp5+OH74PvgGrhTdq8E5yeHk5ghZ7ozKN7dwh3JIsHEPjzekq+LSSRiWr84oM/l0RKBTF0pTJNEsdGMGnZK2OrWfnNZd6KMB1Y9JrUOVpyiTsYoqALtru+Y35iTudEGOLm+nkzSJLt4C1BKuglh5L2Zptdn4DMTYtfZ9D0xW9mXBg5NNgZiokbZi7+J5aKtncW2GFKBsmqJXAA94Ze8delx8YQg349g12a1JcUGY6UWLgFjn+SPEdINbQGx+SeXxpiJzH/fdMjSdfvQ+aQdhoJUNraozrwFKYQIUsHxW6SY2Rr02Y/hrlNg/o8rMckVxjDKQODNEWYP0ORn/31XforneLuTvavbsFIEHtHO2qU7JgiznSXY4HcrUDClnvOLRtPVuQ4SgoXJiFxiBSmOSi6hAbFt5OmPfcC1RJ8jlTNhEDu7v3Iuo6ugvHobMHHmBAILmoiK/NIOogaegr1CLKaaxlh3vmcwrY=
