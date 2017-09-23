@@ -1,11 +1,14 @@
 {
   "name": "castenv",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "Automatically cast process.env environment variables into native types (boolean, number, json object)",
   "license": "MIT",
   "main": "lib/index.js",
-  "author": "",
-  "repository": "/castenv",
+  "author": "tonymet",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tonymet/castenv.git"
+  },
   "scripts": {
     "coveralls": "cat coverage/lcov.info | coveralls",
     "test": "istanbul cover _mocha",
