@@ -1,0 +1,23 @@
+{
+  "name": "castenv",
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "author": "",
+  "repository": "/castenv",
+  "scripts": {
+    "coveralls": "cat coverage/lcov.info | coveralls",
+    "test": "istanbul cover _mocha",
+    "start": "istanbul cover _mocha"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "coveralls": "*",
+    "debug": "^3.0.1",
+    "istanbul": "*",
+    "mocha": "*",
+    "sinon": "*"
+  },
+  "dependencies": {}
+}
