@@ -12,7 +12,8 @@
   "scripts": {
     "coveralls": "cat coverage/lcov.info | coveralls",
     "test": "istanbul cover _mocha",
-    "start": "istanbul cover _mocha"
+    "start": "istanbul cover _mocha",
+    "git:tag": "git tag v/$(jq -r .version < package.json)"
   },
   "devDependencies": {
     "chai": "*",
