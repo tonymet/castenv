@@ -45,6 +45,10 @@ require("castenv").cast()
 console.log(typeof process.env["TEST_NUMBER_VALUE"])
 // number
 ```
+
+## Pitfalls
+* hex & octal values like `0x123` and `0123` will return as strings--JSON doesn't support those literals
+
 ## License
 
 MIT

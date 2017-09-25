@@ -10,6 +10,14 @@ describe('castenv test', function () {
     assert.isObject(index.castValue("{\"kka\" : \"kaka\"}"));
     assert.isString(index.castValue("{\"kka\" : \"kaka\""));
   });
+  it('castValue exceptions', function () {
+    assert.isString(index.castValue("0x123"));
+    assert.isString(index.castValue("0123"));
+  });
+  it('JSON parse exceptions', function () {
+    assert.throws(() => JSON.parse("0x123"));
+    assert.throws(() => JSON.parse("0123"));
+  });
   it('cast works', function () {
     process.env['IS_ACTIVE'] = 'false'
     process.env['MAX_THREADS'] = '10'
