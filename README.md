@@ -4,8 +4,8 @@
 ![Downloads](https://img.shields.io/npm/dm/castenv.svg)
 ![Downloads](https://img.shields.io/npm/dt/castenv.svg)
 ![npm version](https://img.shields.io/npm/v/castenv.svg)
-![dependencies](https://img.shields.io/david//castenv.svg)
-![dev dependencies](https://img.shields.io/david/dev//castenv.svg)
+![dependencies](https://img.shields.io/david/tonymet/castenv.svg)
+![dev dependencies](https://img.shields.io/david/dev/tonymet/castenv.svg)
 ![License](https://img.shields.io/npm/l/castenv.svg)
 
 ## Overview
