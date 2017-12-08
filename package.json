@@ -1,6 +1,6 @@
 {
   "name": "castenv",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Automatically cast process.env environment variables into native types (boolean, number, json object)",
   "license": "MIT",
   "main": "lib/index.js",
@@ -11,17 +11,14 @@
   },
   "scripts": {
     "coveralls": "cat coverage/lcov.info | coveralls",
-    "test": "istanbul cover _mocha",
-    "start": "istanbul cover _mocha",
+    "test": "nyc mocha",
+    "start": "nyc mocha",
     "git:tag": "git tag v/$(jq -r .version < package.json)"
   },
   "devDependencies": {
-    "chai": "*",
-    "coveralls": "*",
-    "debug": "^3.0.1",
-    "istanbul": "*",
-    "mocha": "*",
-    "sinon": "*"
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0"
   },
   "dependencies": {}
 }
