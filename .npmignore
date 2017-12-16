@@ -12,4 +12,7 @@ nbproject
 .node_history
 docker-compose.yml
 Dockerfile
+src
+gulpfile.js
 yarn.lock
+tsconfig.json

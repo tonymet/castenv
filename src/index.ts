@@ -1,9 +1,14 @@
-declare var process:  { [env: string]: {[key:string]: ConvertedEnvironmentValue }  }  
-type ConvertedEnvironmentValue = string|number|boolean|undefined
+declare module castenv{
+    type ProcessEnvValue = NodeJS.ProcessEnv | {[key: string]: any}
+    export interface Process {
+        env: NodeJS.ProcessEnv | ProcessEnvValue
+    }
+}
 /**
  * @param {*} v cast using JSON.parse 
+ * @return {*} Cast value
  */
-function castValue(v): string|number{
+function castValue(v:any): any{
     try{
         return JSON.parse(v)
     }
@@ -11,11 +16,12 @@ function castValue(v): string|number{
         return v
     }
 }
+
 /**
- * cast process.env and return
+ * @return {*} converted process.env as new object
  */
-function env(): {string?: ConvertedEnvironmentValue}{
-    let converted: {string?: ConvertedEnvironmentValue} = {}
+function env(): NodeJS.ProcessEnv{
+    let converted: castenv.ProcessEnvValue = {}
     Object.keys(process.env).forEach(k => {
         converted[k] = castValue(process.env[k])
     })

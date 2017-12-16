@@ -16,9 +16,14 @@
     "git:tag": "git tag v/$(jq -r .version < package.json)"
   },
   "devDependencies": {
+    "@types/node": "^8.5.1",
     "chai": "^4.1.2",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-typescript": "^3.2.3",
     "mocha": "^4.0.1",
-    "nyc": "^11.3.0"
+    "nyc": "^11.3.0",
+    "typescript": "^2.6.2"
   },
   "dependencies": {}
 }
