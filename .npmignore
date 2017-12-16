@@ -13,4 +13,3 @@ nbproject
 docker-compose.yml
 Dockerfile
 yarn.lock
-mocha.opts

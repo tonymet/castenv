@@ -1,5 +1,5 @@
 var assert = require('chai').assert;
-var index = require('../../lib/index');
+var index = require('..');
 
 describe('castenv test', function () {
   it('castValue works', function () {
