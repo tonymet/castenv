@@ -5,6 +5,7 @@ coverage
 *~
 *#
 .*
+*.tgz
 .DS_STORE
 .netbeans
 nbproject
