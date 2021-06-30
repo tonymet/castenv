@@ -16,9 +16,8 @@
     "git:tag": "git tag v/$(jq -r .version < package.json)"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^8.0.1",
+    "chai": "^4.3.4",
+    "mocha": "^9.0.1",
     "nyc": "^15.1.0"
-  },
-  "dependencies": {}
+  }
 }
