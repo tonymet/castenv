@@ -4,8 +4,8 @@ on:
     tags:
       - v*
 jobs:
-  environment: build
   build:
+    environment: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
