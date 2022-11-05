@@ -1,6 +1,6 @@
 {
   "name": "castenv",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "description": "Automatically cast process.env environment variables into native types (boolean, number, json object)",
   "license": "MIT",
   "main": "lib/index.js",
@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "chai": "^4.3.6",
-    "mocha": "^9.2.0",
+    "mocha": "^10.1.0",
     "nyc": "^15.1.0"
   }
 }
