@@ -1,6 +1,6 @@
 {
   "name": "castenv",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "Automatically cast process.env environment variables into native types (boolean, number, json object)",
   "license": "MIT",
   "main": "lib/index.js",
@@ -15,9 +15,11 @@
     "start": "nyc mocha",
     "git:tag": "git tag v/$(jq -r .version < package.json)"
   },
+  "type": "module",
   "devDependencies": {
-    "chai": "^4.4.1",
-    "mocha": "^10.2.0",
-    "nyc": "^15.1.0"
+    "chai": "^5.1.1",
+    "mocha": "^10.6.0",
+    "nyc": "^17.0.0",
+    "standard": "^17.1.0"
   }
 }
